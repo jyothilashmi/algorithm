@@ -8,6 +8,7 @@ public class linkedStack {
 	private class Node {
 		int value;
 		Node next;
+		
 	}
 	
 	public linkedStack()
@@ -20,6 +21,7 @@ public class linkedStack {
 		if(head==null)
 		{
 			 throw new LinkedListEmptyException();
+			 
 		}
 		else
 		{
@@ -60,11 +62,13 @@ public class linkedStack {
 	
 	public static void printList(Node head) {
 		Node temp = head;
+		
 		while (temp != null) {
 			System.out.format("%d ", temp.value);
 			temp = temp.next;
 		}
 		System.out.println();
+		
 	}
 
 }
