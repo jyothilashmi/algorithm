@@ -125,6 +125,7 @@ public class binarySearchTress {
 	    inorder(root);
 	    root = delete(root, 40);
 	    inorder(root);
+	    search(25,root);
 	    /*
         20
       /    \
