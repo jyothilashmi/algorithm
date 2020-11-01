@@ -74,7 +74,7 @@ Step 4: EXIT
     	        System.out.println("\nvalue deleted ");  
     	    }  	
     	}
-    		void display ()  
+    		void display()  
             {  
                 System.out.println("Printing stack elements .....");  
                 for(int i = front; i<arr[i];i++)  
@@ -86,41 +86,32 @@ Step 4: EXIT
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		QueueArr ar=new QueueArr();
 		int choice=0;  
-	    Scanner sc = new Scanner(System.in);  
-	    Stack s = new Stack();  
+		
+	    Scanner sc = new Scanner(System.in);   
 	    System.out.println("*********queue operations using array*********\n");  
 	    System.out.println("\n------------------------------------------------\n");  
 		while(choice != 4)  
 	    {  
 	        System.out.println("\nChose one from the below options...\n");  
-	        System.out.println("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
+	        System.out.println("\n1.insert an element\n2.Delete an element\n3.Display the queue\n4.Exit\n");  
 	        System.out.println("\n Enter your choice \n");        
 	        choice = sc.nextInt();  
 	        switch(choice)  
 	        {  
-	            case 1:  
-	            {   
-	                s.push(sc);  
-	                break;  
-	            }  
+	        case 1:  
+	            ar.insert(sc);  
+	            break;  
 	            case 2:  
-	            {  
-	                s.pop();  
-	                break;  
-	            }  
+	           ar.delete(sc); 
+	            break;  
 	            case 3:  
-	            {  
-	                s.display();  
-	                break;  
-	            }  
-	            case 4:   
-	            {  
-	                System.out.println("Exiting....");  
-	                System.exit(0);  
-	                break;   
-	            }  
-	            default:  
+	            ar.display();  
+	            break;  
+	            
+	            default:     
 	            {  
 	                System.out.println("Please Enter valid choice ");  
 	            }   

@@ -22,11 +22,12 @@ public class BubbleSorting {
 	      System.out.println("The array created is: "+Arrays.toString(arr));
 	      
 	     int i, j, temp,count=0,ex=0,pass=0; 
+	     int n=arr.length;
 	        boolean swapped; 
-	        for (i = 0; i < size - 1; i++)  
+	        for (i = 0; i < n; i++)  
 	        { 
 	            swapped = false; 
-	            for (j = 0; j < size - 1; j++)  
+	            for (j = 0; j < n-i-1; j++)  
 	            { 
 	                if (arr[j] > arr[j + 1])  
 	                { 
