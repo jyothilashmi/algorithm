@@ -10,12 +10,14 @@ public class selectionSort {
 	static int temp; 
     
      static int size=a.length;
+     
+     //finding smallest element
      public  static int sm(int a[], int n, int i)  
 	    {
 	    	int small,ps;  
 	    	small = a[i];  
 	        ps = i;
-	        
+	       //finding the index of the smallest element index position 
 	        for(j=i+1;j<n;j++)
 	        {
 	        	System.out.println("\nj...\n"+ j); 
@@ -31,7 +33,7 @@ public class selectionSort {
 	        return ps;
 	    }
 	public static void main(String[] args) {
-
+//swapping
     
     for(i=0;i<size;i++)
     {
